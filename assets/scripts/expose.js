@@ -91,7 +91,14 @@ function init() {
     // alert (sound_copy);
     sound.play();
 
-    
+    let selected_value = document.getElementById("horn-select").value
+    if (selected_value == "party-horn") {
+      // alert ("at party horn")
+
+      const jsConfetti = new JSConfetti()
+      // jsConfetti.party_image_location = (500, 500)
+      jsConfetti.addConfetti()
+    }
 
   }
 
